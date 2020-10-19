@@ -1,0 +1,35 @@
+.tri-card-icon {
+  height: 40px;
+  width: 40px;
+}
+
+.double-card {
+  height: 200px;
+  font-size: 0.8em;
+}
+
+.double-card-icon {
+  width: 150px;
+  height: 150px;
+}
+
+.team-card {
+  background-color: #00042e;
+  min-height: 400px;
+}
+
+.banner-row {
+  background-color: #00042e;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 41, 102, 1) 0%,
+    rgba(0, 4, 46, 1) 100%
+  );
+}
+
+@media (max-width: 576px) {
+  .double-card-icon {
+    height: 90px;
+    width: 90px;
+  }
+}

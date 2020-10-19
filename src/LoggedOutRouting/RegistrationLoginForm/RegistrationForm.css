@@ -1,0 +1,27 @@
+.registration-form-border-top {
+  border-top: 50vh solid #253c70;
+  box-sizing: border-box;
+  height: auto;
+  width: 100vh;
+  position: absolute;
+  z-index: -1;
+  background-color: #dad9df;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.bg-form {
+  background-color: white;
+}
+
+.login-reg-container {
+  height: 100vh;
+  margin-top: 60px;
+}
+
+.registration-template {
+  height: auto;
+  min-height: 85vh;
+}

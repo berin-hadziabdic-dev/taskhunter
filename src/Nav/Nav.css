@@ -1,0 +1,19 @@
+.nav-wrapper {
+  height: 60px;
+  background-color: white;
+}
+
+.custom-brand {
+  height: 40px;
+  width: 40px;
+}
+
+.nav-icon {
+  height: 15px;
+  width: 15px;
+}
+
+.footer {
+  background-color: #e3e7f0;
+  color: #76787e;
+}

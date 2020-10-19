@@ -1,0 +1,24 @@
+.overlay {
+  background-color: rgba(0, 0, 255, 0.5);
+  height: 100vh;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 99999;
+}
+
+.over-display {
+  background-color: "white";
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.header-row {
+  height: 80px;
+}
+
+.overlay-header {
+  height: 60px;
+  width: 60px;
+}

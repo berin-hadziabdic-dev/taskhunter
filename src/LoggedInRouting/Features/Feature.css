@@ -1,0 +1,17 @@
+.feature-row {
+  min-height: 400px;
+}
+.feature-dash-row {
+  min-height: 200px;
+}
+
+.feature-footer {
+  background-color: #ccd5e3;
+  bottom: 0px;
+  height: auto;
+  left: 0px;
+  position: fixed;
+}
+
+.footer-button {
+}
