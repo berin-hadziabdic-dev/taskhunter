@@ -3,7 +3,7 @@ import { FeatureCard } from "./FeatureCard";
 import { FeatureOverlay } from "./FeatureBody";
 import "./FeatureListing.css";
 
-const FEATURE_DATA = [
+const MOCK_FEATURE_DATA = [
   {
     feature_name: "feature-1",
     feature_description:
@@ -202,7 +202,7 @@ function FeatureListing(props) {
         />
       ) : null}
 
-      {FEATURE_DATA.map((element) => (
+      {MOCK_FEATURE_DATA.map((element) => (
         <FeatureCard
           feature_name={element.feature_name}
           feature_description={element.feature_description}

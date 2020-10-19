@@ -4,15 +4,11 @@ import icon from "./Images/Icons/icon.png";
 import edit from "./Images/Icons/edit.svg";
 import del from "./Images/Icons/delete.svg";
 
-import { Tile, ProjectTile } from "./Tile/Tile";
-import { RegistrationLoginForm } from "./LoggedOut/RegistrationLoginForm/RegistrationLoginForm";
-import FeatureForm from "./AddFeature/AddFeature";
-import FeaturePopUp from "./FeaturePopUp/FeaturePopUp";
 import "./App.css";
 
-import { LoggedOutRouting } from "./LoggedOut/LoggedOutRouting";
+import { LoggedOutRouting } from "./LoggedOutRouting/LoggedOutRouting";
 import { Nav } from "./Nav/Nav";
-import { LoggedInRouting } from "./LoggedIn/LoggedInRouting";
+import { LoggedInRouting } from "./LoggedInRouting/LoggedInRouting";
 
 const ICON = { height: "40px", width: "40px" };
 const ICONsMALLER = { height: "30px", width: "30px" };
@@ -103,44 +99,12 @@ function AddTile(props) {
 }
 
 function App() {
-  let [loggedIn, setLoggedIn] = useState(false);
-  let contentsTest = (
-    <ul>
-      <li>1</li>
-      <li>1</li> bacl
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-    </ul>
-  );
-
-  /*let copyPaste =     <><section className="container">
-  <div className="row justify-content-start align-items-center">
-    <Tile
-      startingLetter={"H"}
-      contents={contentsTest}
-      editOnClick={() => {
-        alert("edit on click");
-      }}
-      deleteOnClick={() => {
-        alert("delete on click");
-      }}
-      expandOnClick={() => alert("expand on click")}
-    />
-    <Tile startingLetter={"T"} contents={contentsTest} />
-    <ProjectTile projectName="MyProject" />
-  </div>
-</section>
-<FeatureForm />
-<FeaturePopUp /></>*/
-
+  let [loggedIn, setLoggedIn] = useState(true);
+  const loggedInRoute = <LoggedInRouting />;
+  const loggedOutRouting = <LoggedOutRouting />;
   return (
     <>
       <Nav loggedIn={loggedIn} />
-      <LoggedOutRouting />
       <LoggedInRouting />
     </>
   );

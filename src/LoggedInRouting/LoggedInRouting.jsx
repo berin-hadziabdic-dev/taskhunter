@@ -20,20 +20,26 @@ function LoggedInRouting(props) {
   }
 
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/projectlist">
-          {
-            resetProjectFeatureState()
-            //whenever the user requests to see a projectlist, reset the projectFeatureState
-          }
-          <ProjectListing />
-        </Route>
-        <Route exact path="/featurelist">
-          <FeatureListing />
-        </Route>
-      </Switch>
-    </Router>
+    <>
+      <section style={{ marginTop: "80px" }}></section>
+      <Router>
+        <Switch>
+          <Route exact path="/projectlist">
+            {
+              //resetProjectFeatureState()
+              //whenever the user requests to see a projectlist, reset the projectFeatureState
+            }
+            <ProjectListing />
+          </Route>
+          <Route exact path="/featurelist">
+            <FeatureListing />
+          </Route>
+          <Route>
+            <FeatureListing />
+          </Route>
+        </Switch>
+      </Router>
+    </>
   );
 }
 
