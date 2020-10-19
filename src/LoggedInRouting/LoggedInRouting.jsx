@@ -22,6 +22,7 @@ function LoggedInRouting(props) {
   return (
     <>
       <section style={{ marginTop: "80px" }}></section>
+      <p className="bg-white text-warning">TESTING MODE</p>
       <Router>
         <Switch>
           <Route exact path="/projectlist">
